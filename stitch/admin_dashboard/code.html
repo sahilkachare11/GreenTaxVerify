@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BMC Admin Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#191c1b",
+                    "on-secondary-fixed-variant": "#304e2e",
+                    "on-surface-variant": "#40493d",
+                    "surface": "#f8faf8",
+                    "surface-tint": "#1b6d24",
+                    "primary-fixed-dim": "#88d982",
+                    "error": "#ba1a1a",
+                    "outline": "#707a6c",
+                    "tertiary-container": "#b14b6f",
+                    "inverse-surface": "#2e3130",
+                    "tertiary": "#923357",
+                    "secondary-fixed": "#c9ecc1",
+                    "inverse-primary": "#88d982",
+                    "error-container": "#ffdad6",
+                    "primary": "#0d631b",
+                    "primary-fixed": "#a3f69c",
+                    "surface-bright": "#f8faf8",
+                    "surface-container-low": "#f2f4f2",
+                    "on-secondary-container": "#4c6a48",
+                    "on-tertiary-container": "#ffedf0",
+                    "outline-variant": "#bfcaba",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#c6e9be",
+                    "surface-dim": "#d8dad9",
+                    "on-tertiary-fixed-variant": "#7f2448",
+                    "inverse-on-surface": "#eff1ef",
+                    "on-error-container": "#93000a",
+                    "background": "#f8faf8",
+                    "primary-container": "#2e7d32",
+                    "on-secondary-fixed": "#052106",
+                    "surface-container-high": "#e6e9e7",
+                    "secondary": "#476644",
+                    "on-primary-fixed-variant": "#005312",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e1e3e1",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002204",
+                    "tertiary-fixed": "#ffd9e2",
+                    "on-surface": "#191c1b",
+                    "on-tertiary-fixed": "#3f001c",
+                    "surface-container": "#eceeec",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#cbffc2",
+                    "surface-variant": "#e1e3e1",
+                    "secondary-fixed-dim": "#add0a6",
+                    "tertiary-fixed-dim": "#ffb1c7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-forest-gradient {
+            background: linear-gradient(145deg, #0d631b 0%, #2e7d32 100%);
+        }
+        .tonal-glass {
+            background: rgba(248, 250, 248, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-gradient-to-br from-emerald-900 to-emerald-700 flex justify-between items-center px-4 h-16 w-full shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white" data-icon="account_balance">account_balance</span>
+<h1 class="font-headline font-bold text-lg text-white tracking-tight">BMC Admin Portal</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-200 hover:opacity-80 transition-opacity cursor-pointer" data-icon="notifications">notifications</span>
+<div class="w-8 h-8 rounded-full bg-emerald-100 overflow-hidden border-2 border-emerald-400">
+<img alt="User Profile" data-alt="professional headshot of a government administrator in a suit, clean background, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQjcZ9NPUnHeg7tjcjdzRIBAOVqxrTZF6LMIjb0lQNu-zZxf1l5pJzKxqxF5ltAUYi3f1SFm8RwEYvcQHFou8Vn0u7Bh9TffdPCpT4nAK_8-CxMn2VHe7CJT6EPtorLKyI6Kpn9sEfEAC8l_2ke3MhmkGx_Sb8wWmYpJ-P-vhm9gmNQ-LE16sgLlKdsiXKfecxVa_Ys8bWxkvJI_U3yxi5FJrSf1o5J4QFgkG1WwXW3hr3aGMcDw3FfuQtnusqnZI6gJe77NXnC4w"/>
+</div>
+</div>
+</header>
+<main class="pt-20 pb-24 px-4 md:px-8 max-w-7xl mx-auto">
+<!-- Dashboard Intro -->
+<section class="mb-8">
+<h2 class="font-headline text-3xl font-extrabold text-primary mb-2">Governance Overview</h2>
+<p class="text-on-surface-variant font-medium">Real-time compliance tracking for Brihanmumbai Municipal Corporation societies.</p>
+</section>
+<!-- Bento Grid Stats -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+<!-- Total Societies -->
+<div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col justify-between aspect-square md:aspect-auto">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="domain">domain</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-sm font-semibold uppercase tracking-wider">Total Societies</span>
+<div class="text-4xl font-headline font-black text-on-surface">245</div>
+</div>
+</div>
+<!-- Compliant -->
+<div class="bg-forest-gradient p-6 rounded-xl flex flex-col justify-between aspect-square md:aspect-auto text-white">
+<div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4 backdrop-blur-md">
+<span class="material-symbols-outlined text-white" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<span class="text-emerald-100 text-sm font-semibold uppercase tracking-wider">Compliant</span>
+<div class="text-4xl font-headline font-black">198</div>
+</div>
+</div>
+<!-- Flagged -->
+<div class="bg-error-container p-6 rounded-xl flex flex-col justify-between aspect-square md:aspect-auto">
+<div class="w-10 h-10 rounded-lg bg-white/50 flex items-center justify-center mb-4 backdrop-blur-sm">
+<span class="material-symbols-outlined text-on-error-container" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div>
+<span class="text-on-error-container/80 text-sm font-semibold uppercase tracking-wider">Flagged</span>
+<div class="text-4xl font-headline font-black text-on-error-container">32</div>
+</div>
+</div>
+<!-- Pending -->
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between aspect-square md:aspect-auto">
+<div class="w-10 h-10 rounded-lg bg-outline-variant/30 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="pending_actions">pending_actions</span>
+</div>
+<div>
+<span class="text-on-surface-variant text-sm font-semibold uppercase tracking-wider">Pending Review</span>
+<div class="text-4xl font-headline font-black text-on-surface">15</div>
+</div>
+</div>
+</div>
+<!-- Societies Verification List -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden mb-12 shadow-sm">
+<div class="p-6 border-b border-surface-container flex items-center justify-between">
+<h3 class="font-headline text-xl font-bold text-on-surface">Verification Queue</h3>
+<button class="text-primary font-bold text-sm hover:underline">View All Records</button>
+</div>
+<div class="divide-y divide-surface-container-low">
+<!-- Row 1 -->
+<div class="p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4 min-w-[300px]">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="apartment">apartment</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Green Valley Heights CHS</h4>
+<p class="text-sm text-on-surface-variant">Reg ID: BMC-2024-0092</p>
+</div>
+</div>
+<div class="flex items-center gap-8 grow">
+<div class="w-full max-w-[200px]">
+<div class="flex justify-between text-xs font-bold mb-1">
+<span class="text-on-surface-variant uppercase">Compliance Score</span>
+<span class="text-primary">92%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 92%"></div>
+</div>
+</div>
+<div class="hidden lg:block shrink-0">
+<span class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-xs font-bold">Excellent State</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-4 py-2 bg-forest-gradient text-white text-xs font-bold rounded-lg active:scale-95 transition-transform">Approve</button>
+<button class="px-4 py-2 bg-surface-container-highest text-on-secondary-container text-xs font-bold rounded-lg hover:bg-surface-container-high transition-colors">Reject</button>
+<button class="p-2 text-error hover:bg-error-container/20 rounded-lg transition-colors">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+</button>
+</div>
+</div>
+<!-- Row 2 (Flagged Style) -->
+<div class="p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4 min-w-[300px]">
+<div class="w-12 h-12 rounded-full bg-error-container/30 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error" data-icon="apartment">apartment</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Ocean View Residency</h4>
+<p class="text-sm text-on-surface-variant">Reg ID: BMC-2024-1104</p>
+</div>
+</div>
+<div class="flex items-center gap-8 grow">
+<div class="w-full max-w-[200px]">
+<div class="flex justify-between text-xs font-bold mb-1">
+<span class="text-on-surface-variant uppercase">Compliance Score</span>
+<span class="text-error">45%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error" style="width: 45%"></div>
+</div>
+</div>
+<div class="hidden lg:block shrink-0">
+<span class="bg-error-container text-on-error-container px-3 py-1 rounded-full text-xs font-bold">Critical Violation</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-4 py-2 bg-forest-gradient text-white text-xs font-bold rounded-lg active:scale-95 transition-transform">Approve</button>
+<button class="px-4 py-2 bg-surface-container-highest text-on-secondary-container text-xs font-bold rounded-lg">Reject</button>
+<button class="p-2 bg-error text-white rounded-lg">
+<span class="material-symbols-outlined" data-icon="flag" style="font-variation-settings: 'FILL' 1;">flag</span>
+</button>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4 min-w-[300px]">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="apartment">apartment</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Sunrise Cooperative</h4>
+<p class="text-sm text-on-surface-variant">Reg ID: BMC-2024-0512</p>
+</div>
+</div>
+<div class="flex items-center gap-8 grow">
+<div class="w-full max-w-[200px]">
+<div class="flex justify-between text-xs font-bold mb-1">
+<span class="text-on-surface-variant uppercase">Compliance Score</span>
+<span class="text-on-secondary-fixed-variant">78%</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 78%"></div>
+</div>
+</div>
+<div class="hidden lg:block shrink-0">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">Review Required</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-4 py-2 bg-forest-gradient text-white text-xs font-bold rounded-lg active:scale-95 transition-transform">Approve</button>
+<button class="px-4 py-2 bg-surface-container-highest text-on-secondary-container text-xs font-bold rounded-lg">Reject</button>
+<button class="p-2 text-error hover:bg-error-container/20 rounded-lg transition-colors">
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badge Component -->
+<div class="flex justify-center mb-16">
+<div class="bg-surface-container-lowest border border-outline-variant/20 px-6 py-3 rounded-full flex items-center gap-3 shadow-sm backdrop-blur-xl">
+<span class="material-symbols-outlined text-primary" data-icon="policy">policy</span>
+<span class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest">Official BMC Verification Audit Layer Active</span>
+</div>
+</div>
+</main>
+<!-- NavigationDrawer (Hidden by default, used for structural reference or mobile side-draw) -->
+<aside class="hidden lg:flex fixed left-0 top-16 h-[calc(100vh-64px)] w-20 flex-col items-center py-8 bg-surface-container-low border-r border-surface-container gap-8 z-40">
+<div class="w-12 h-12 flex items-center justify-center bg-emerald-200/50 text-emerald-900 font-bold rounded-lg" title="Dashboard">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+</div>
+<div class="w-12 h-12 flex items-center justify-center text-emerald-700/80 hover:bg-emerald-100 transition-colors cursor-pointer rounded-lg" title="Tax Certificates">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+</div>
+<div class="w-12 h-12 flex items-center justify-center text-emerald-700/80 hover:bg-emerald-100 transition-colors cursor-pointer rounded-lg" title="Environmental Guidelines">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</div>
+<div class="mt-auto w-12 h-12 flex items-center justify-center text-emerald-700/80 hover:bg-emerald-100 transition-colors cursor-pointer rounded-lg" title="Settings">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</div>
+</aside>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-xl rounded-t-3xl border-t border-emerald-100/20 shadow-[0_-4px_24px_0_rgba(25,28,27,0.06)]">
+<div class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-50 rounded-2xl px-5 py-1.5 duration-200 active:scale-90">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-inter text-[10px] font-semibold">Dashboard</span>
+</div>
+<div class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 duration-200 active:scale-90">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-inter text-[10px] font-semibold">Activity</span>
+</div>
+<div class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 duration-200 active:scale-90">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+<span class="font-inter text-[10px] font-semibold">Review</span>
+</div>
+<div class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 duration-200 active:scale-90">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold">Profile</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ward Compliance Leaderboard</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#191c1b",
+                    "on-secondary-fixed-variant": "#304e2e",
+                    "on-surface-variant": "#40493d",
+                    "surface": "#f8faf8",
+                    "surface-tint": "#1b6d24",
+                    "primary-fixed-dim": "#88d982",
+                    "error": "#ba1a1a",
+                    "outline": "#707a6c",
+                    "tertiary-container": "#b14b6f",
+                    "inverse-surface": "#2e3130",
+                    "tertiary": "#923357",
+                    "secondary-fixed": "#c9ecc1",
+                    "inverse-primary": "#88d982",
+                    "error-container": "#ffdad6",
+                    "primary": "#0d631b",
+                    "primary-fixed": "#a3f69c",
+                    "surface-bright": "#f8faf8",
+                    "surface-container-low": "#f2f4f2",
+                    "on-secondary-container": "#4c6a48",
+                    "on-tertiary-container": "#ffedf0",
+                    "outline-variant": "#bfcaba",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#c6e9be",
+                    "surface-dim": "#d8dad9",
+                    "on-tertiary-fixed-variant": "#7f2448",
+                    "inverse-on-surface": "#eff1ef",
+                    "on-error-container": "#93000a",
+                    "background": "#f8faf8",
+                    "primary-container": "#2e7d32",
+                    "on-secondary-fixed": "#052106",
+                    "surface-container-high": "#e6e9e7",
+                    "secondary": "#476644",
+                    "on-primary-fixed-variant": "#005312",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e1e3e1",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002204",
+                    "tertiary-fixed": "#ffd9e2",
+                    "on-surface": "#191c1b",
+                    "on-tertiary-fixed": "#3f001c",
+                    "surface-container": "#eceeec",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#cbffc2",
+                    "surface-variant": "#e1e3e1",
+                    "secondary-fixed-dim": "#add0a6",
+                    "tertiary-fixed-dim": "#ffb1c7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-bg-surface-container-low {
+            background-color: #f2f4f2;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-gradient-to-br from-emerald-900 to-emerald-700 flex justify-between items-center px-4 h-16 w-full shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white" data-icon="account_balance">account_balance</span>
+<h1 class="font-headline font-bold text-lg text-white tracking-tight">GreenTax Verify</h1>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-white/20">
+<img alt="User Profile" data-alt="professional portrait of a municipal administrator in a clean modern office setting soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCynBGQb879BXBzpOEh5Cc-utOdNSobsvlvxvZPGi9kQrpBLqDpB7twylS_X3n_7MVB1y8i8M1fV7lSmI-6Grna_MCngwBVDSCxCIkVIV2_uv2ecJi-KYeDSYLYcbiIcxkzZYdQQcGOjYUAfHbb2DXSpS2Gwq0qnppG4iVLXFH2_smjxo3QYZfhFkPyrYQ2lgiGqH0WwnlZGR4XAQXUVUg4VDgbk5E3NGn55CdAq9oFMGixFMceqd480W8qYdRZiqRvbv6NhdlcC1A"/>
+</div>
+</header>
+<main class="pt-20 pb-32 px-4 max-w-4xl mx-auto">
+<!-- Screen Header -->
+<div class="mb-8 flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary" data-icon="trophy" style="font-variation-settings: 'FILL' 1;">trophy</span>
+<span class="text-primary font-headline font-bold tracking-wider uppercase text-xs">Performance Registry</span>
+</div>
+<h2 class="text-3xl font-headline font-extrabold text-on-surface">Ward Compliance Leaderboard</h2>
+<p class="text-on-surface-variant text-sm mt-1">Real-time environmental compliance rankings by residential society.</p>
+</div>
+<div class="hidden md:flex bg-primary-container/10 px-4 py-2 rounded-full items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="calendar_today">calendar_today</span>
+<span class="text-primary font-bold text-xs uppercase tracking-widest">Q3 2023</span>
+</div>
+</div>
+<!-- Podium Section (Top 3) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 items-end">
+<!-- Rank 2 -->
+<div class="order-2 md:order-1 bg-surface-container-low rounded-[2rem] p-6 flex flex-col items-center text-center relative overflow-hidden h-[280px] justify-end">
+<div class="absolute top-0 left-0 w-full h-2 bg-[#C0C0C0]"></div>
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center mb-4 shadow-sm border-2 border-[#C0C0C0]/30">
+<img alt="Silver Medalist" data-alt="modern architectural rendering of a sustainable apartment complex with vertical gardens and solar panels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgL4fM4xb6J6jf80-9zd7chVfxnjyHMxH91i0XurEY9DC3Ikm27ZY21ZEUBaA9pjR7jDRNymRTu0oGo63wjB2IcBNiK3AtHzfkCn3J4AIywjfJgcrNHZbvGfIgEZ_0eITpaAy1kl86uuhTfcg9VhApCQE5xQoUrUuv1xcWmdtKhRf6yTrh3OLJSZZgApJXtsBzN7Poj__8DUuJhptN-fk0QrjaQ1rvwllk3pftTK2UGcnHMfQkuyL84tzywnyfzxcVnBEDv9pPhlY"/>
+</div>
+<h3 class="font-headline font-bold text-lg leading-tight">Emerald Heights</h3>
+<p class="text-on-surface-variant text-sm mb-4">Ward 12-B</p>
+<div class="bg-surface-container-lowest px-4 py-2 rounded-xl border border-outline-variant/20 mb-2">
+<span class="text-2xl font-black text-on-surface">94.2</span>
+</div>
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">Silver Tier</span>
+</div>
+<!-- Rank 1 -->
+<div class="order-1 md:order-2 bg-gradient-to-b from-primary to-primary-container rounded-[2.5rem] p-8 flex flex-col items-center text-center relative overflow-hidden h-[340px] justify-end shadow-xl">
+<div class="absolute top-6 right-6">
+<span class="material-symbols-outlined text-white/40 text-6xl" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="w-24 h-24 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center mb-6 border-4 border-primary-fixed">
+<img alt="Gold Medalist" data-alt="ultra modern eco-friendly housing society with lush green roofs and glass balconies sunlit morning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgdLojAIZI-sHpHQZcJgQPn9fmWiT5dFsbcyEAKAEWDduM8bsgrsLoV1m7RlXHiBKx1F9iBHBfFHHLRd_SFsadG0TTvvRW__o_oFOEvrorM6cBF3X-FnUyii3yqaev-GoVtFWcgM_cMBVdQaVMMmy5Cetbtqf6Ybg1eSngXxKH-Z6Nu9t2ZA1nJcRnZJNCrKcAL-c4xChrhuIcHPt_iwTzp2tBh2QpcSWZpYxayEcxw8TMmIxpUN5uSkN8_peaZ8ZCmIy-CHJHQ6M"/>
+</div>
+<h3 class="font-headline font-extrabold text-2xl text-white leading-tight">Green Valley Residency</h3>
+<p class="text-primary-fixed text-sm mb-6">Ward 04-A</p>
+<div class="bg-white/20 backdrop-blur-xl px-6 py-3 rounded-2xl border border-white/30 mb-2">
+<span class="text-3xl font-black text-white">98.8</span>
+</div>
+<span class="text-xs font-bold text-primary-fixed uppercase tracking-[0.2em]">Platinum Excellence</span>
+</div>
+<!-- Rank 3 -->
+<div class="order-3 bg-surface-container-low rounded-[2rem] p-6 flex flex-col items-center text-center relative overflow-hidden h-[240px] justify-end">
+<div class="absolute top-0 left-0 w-full h-2 bg-[#CD7F32]"></div>
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center mb-4 shadow-sm border-2 border-[#CD7F32]/30">
+<img alt="Bronze Medalist" data-alt="contemporary urban residential block with integrated recycling stations and clean communal areas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVIMvsNQT2q1eKkCa7MOGJnyE85sz5OiFG26mVZBq9-IfVOkLj1b1u8j2ukzG3vHE_5Lk3FBDpKG0zqu3SWxBeolMRAAAdItlMLM4HKTt4Xg7HWpevzmNlV6ojrLa6WWyu7almSWCPeUe0sL3fYbiO5SCSq4oX4fEpBwnLFe9Z4Kx9HihJhIfWPqDhAFzdNYU9W3xRR3qpyigzSnVk_dOlqSXlh4XRNG2iB83OAoZ68FZ3_X_GGbagvXCEW9f5_yVQJN87GeyCxWg"/>
+</div>
+<h3 class="font-headline font-bold text-lg leading-tight">Skyline Orchards</h3>
+<p class="text-on-surface-variant text-sm mb-4">Ward 08-C</p>
+<div class="bg-surface-container-lowest px-4 py-2 rounded-xl border border-outline-variant/20 mb-2">
+<span class="text-2xl font-black text-on-surface">91.5</span>
+</div>
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">Bronze Tier</span>
+</div>
+</div>
+<!-- Leaderboard List -->
+<div class="bg-surface-container-low rounded-[2rem] overflow-hidden">
+<div class="px-8 py-6 flex justify-between items-center border-b border-outline-variant/10">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Society Ranking</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Compliance Score</span>
+</div>
+<div class="flex flex-col">
+<!-- Row 4 -->
+<div class="px-8 py-5 flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-6">
+<span class="font-headline font-black text-outline text-xl w-6">4</span>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center overflow-hidden">
+<img alt="Orchid Heights" data-alt="geometric minimal logo of a flower in emerald green" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQKero0oKCpfBgJ6Urkxt85YFDXYWjSVFZNga1JxkI-V1wz70b5sgKi-6K4Rbtt3hbI7sNPtmv0HAZgjxAxUz1MluOQ7GDc-3wyaS-sjBn-hOJdCZT2FeK5fBt4BK46tWuFi5vy8Nr8jgoYurrYeRn5v34Vf_IeX2Jhs0L9OsAjxsGSQX-fY9LrV3gGdg4n7wNVZmbnGJPYd0oy3fQngvZ4XacP1zhoHxKehaOCMUtdOSrDZfw9G-7Bm_bJ3qnhjP1a1erMufxrzY"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Orchid Heights</h4>
+<p class="text-xs text-on-surface-variant">Ward 15-D</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex flex-col items-end">
+<span class="font-headline font-bold text-lg">89.4</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[10px]" data-icon="trending_up">trending_up</span>
+<span class="text-[10px] font-bold text-primary">+1.2</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="px-8 py-5 flex items-center justify-between hover:bg-surface-container-high transition-colors bg-surface-container-lowest/30">
+<div class="flex items-center gap-6">
+<span class="font-headline font-black text-outline text-xl w-6">5</span>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center overflow-hidden">
+<img alt="Blue Meadows" data-alt="minimalist landscape icon with rolling hills and a sun in green and blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbttlGBfpBQCLGe5KFSdeuBDwg5qNGbfQBfDsReocVRgaCHbor_ySxJbK4z0xQVfGzdv2TiDuDOqh5ZFq2Dyot2m4BQTuXcQR6xzAkQcQ1UudkRMdm6YkmD8Tho9DCBrsBpQxCdMXjglxDVNwsYhPzLAxip6bTDJS-_BDdge4EOm6qlYDBbAQ-_AY6N1hEQYTCvP5JSwMZySaC3UbH7OY_q-OzAPiuLPe3vuIPKo0M4WXSK5W8snSXXM_MQEG0HNTcF11iz2xaetE"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Blue Meadows</h4>
+<p class="text-xs text-on-surface-variant">Ward 02-A</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex flex-col items-end">
+<span class="font-headline font-bold text-lg">87.1</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-error text-[10px]" data-icon="trending_down">trending_down</span>
+<span class="text-[10px] font-bold text-error">-0.4</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Row 6 -->
+<div class="px-8 py-5 flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-6">
+<span class="font-headline font-black text-outline text-xl w-6">6</span>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center overflow-hidden">
+<img alt="Cedar Park" data-alt="stylized tree icon in a forest green circle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfbB8eTOsHK00jCnS-WeKS7P2BLbmFGCO2QM0xd9qCiwcSpjt8fegRIbkPBRI9ICjkEqxA20-PRwZNjx2CdP2l2Itr1iDCqW5qUMhzqpaUH25BuOqxMsVD6NyxSOWiC37rrU-_aRrFiPGioM0vA3zC0v7LOZKjiwnWUNFZCTv2N-NKoJa9RbkhRUOO3gHWuo0B6tdeck6DGb0IpdijKdTBLKmry_sNEAClLc-kUq212FfI1NeVeqVtUozsHyZRFnNQ-68dvDSeUJo"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Cedar Park</h4>
+<p class="text-xs text-on-surface-variant">Ward 11-E</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex flex-col items-end">
+<span class="font-headline font-bold text-lg">85.9</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[10px]" data-icon="trending_up">trending_up</span>
+<span class="text-[10px] font-bold text-primary">+2.1</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Row 7 -->
+<div class="px-8 py-5 flex items-center justify-between hover:bg-surface-container-high transition-colors bg-surface-container-lowest/30">
+<div class="flex items-center gap-6">
+<span class="font-headline font-black text-outline text-xl w-6">7</span>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center overflow-hidden">
+<img alt="River View" data-alt="abstract river wave icon in a soft blue-green gradient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGceIHKaCwnkXSIkowhevwqonQHn5yGZZdyCVpd5iTEDnFbotZOtFkEw4oAX_QPhHeJ-g3FPWNRu7FkNYiAQU3aZqzGVcCFEkkzIG7PTwzLf6aDEsZUSI7DT3Sojz_-FScpqLKJxSg_or8nMVtbMzd5ujcYuxlRie6_Bb2QVoLYEvzxRSkKXIhEGK7z1rzG4ohdZPKhzkLeyAWv4mFXhJGi8V00nyXv6ljeHlt2FqPBfCeLoXTXZoqeZp1vgS07U1Ni8qIa7TteRA"/>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">River View Annex</h4>
+<p class="text-xs text-on-surface-variant">Ward 05-B</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex flex-col items-end">
+<span class="font-headline font-bold text-lg">82.3</span>
+<div class="flex items-center gap-1">
+<span class="text-[10px] font-bold text-on-surface-variant opacity-40">STABLE</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<button class="w-full py-6 text-primary font-bold text-sm uppercase tracking-widest hover:bg-primary/5 transition-colors">
+                View All Societies (124)
+            </button>
+</div>
+<!-- Trust Badge -->
+<div class="mt-12 flex justify-center">
+<div class="bg-surface-container-lowest border border-outline-variant/10 px-6 py-4 rounded-3xl flex items-center gap-4 shadow-[0_4px_24px_rgba(0,0,0,0.04)] backdrop-blur-xl bg-white/80">
+<div class="bg-primary/10 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<h5 class="font-bold text-sm text-on-surface">Government Verified Data</h5>
+<p class="text-[10px] text-on-surface-variant">Last updated: Oct 24, 2023 • 09:00 AM</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-xl shadow-[0_-4px_24px_0_rgba(25,28,27,0.06)] rounded-t-3xl border-t border-emerald-100/20">
+<a class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-inter text-[10px] font-semibold">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-inter text-[10px] font-semibold">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-50 rounded-2xl px-5 py-1.5 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+<span class="font-inter text-[10px] font-semibold">Review</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

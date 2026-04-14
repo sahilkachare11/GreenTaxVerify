@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GreenTax Verify - Proof History</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#191c1b",
+                        "on-secondary-fixed-variant": "#304e2e",
+                        "on-surface-variant": "#40493d",
+                        "surface": "#f8faf8",
+                        "surface-tint": "#1b6d24",
+                        "primary-fixed-dim": "#88d982",
+                        "error": "#ba1a1a",
+                        "outline": "#707a6c",
+                        "tertiary-container": "#b14b6f",
+                        "inverse-surface": "#2e3130",
+                        "tertiary": "#923357",
+                        "secondary-fixed": "#c9ecc1",
+                        "inverse-primary": "#88d982",
+                        "error-container": "#ffdad6",
+                        "primary": "#0d631b",
+                        "primary-fixed": "#a3f69c",
+                        "surface-bright": "#f8faf8",
+                        "surface-container-low": "#f2f4f2",
+                        "on-secondary-container": "#4c6a48",
+                        "on-tertiary-container": "#ffedf0",
+                        "outline-variant": "#bfcaba",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#c6e9be",
+                        "surface-dim": "#d8dad9",
+                        "on-tertiary-fixed-variant": "#7f2448",
+                        "inverse-on-surface": "#eff1ef",
+                        "on-error-container": "#93000a",
+                        "background": "#f8faf8",
+                        "primary-container": "#2e7d32",
+                        "on-secondary-fixed": "#052106",
+                        "surface-container-high": "#e6e9e7",
+                        "secondary": "#476644",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e1e3e1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002204",
+                        "tertiary-fixed": "#ffd9e2",
+                        "on-surface": "#191c1b",
+                        "on-tertiary-fixed": "#3f001c",
+                        "surface-container": "#eceeec",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#cbffc2",
+                        "surface-variant": "#e1e3e1",
+                        "secondary-fixed-dim": "#add0a6",
+                        "tertiary-fixed-dim": "#ffb1c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Public Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8faf8;
+        }
+        .font-public-sans { font-family: 'Public Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-emerald-800 dark:bg-emerald-950 flex justify-between items-center px-4 h-16 bg-gradient-to-br from-emerald-900 to-emerald-700 shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white text-xl">account_balance</span>
+<h1 class="text-white font-public-sans font-bold text-lg tracking-tight">GreenTax Verify</h1>
+</div>
+<div class="h-8 w-8 rounded-full overflow-hidden border-2 border-emerald-400/30 active:scale-95 transition-transform cursor-pointer">
+<img alt="user_profile_photo" class="w-full h-full object-cover" data-alt="close-up portrait of a professional administrator with a friendly expression in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADvbTEFT1wH2M1swCCRVzX_KN7ySb3CI1lRPWYrqkP_vgvggyEkeZ25DZtZpUJNOvt8-pp7RgE3FjowqyExm8zzZJE-oU9ll_S2AiEL9tIVIXhJ6AnPtE0qAJ4UB5X9RxbDcm-WeJnXoMarmKtiHKTWICJz7Wyzjt0YCgO7-z98MIhsoaBv8NXImw3SjWH7Kka-tiHrzL9klOdD0fZbg4k-8p018oFSpxvOGVpFPtHZFLabdQzPEGyKLlDXwiBJHgBVfGRLZ-DWXE"/>
+</div>
+</header>
+<main class="pt-20 pb-24 px-4 max-w-4xl mx-auto">
+<!-- Screen Header & Filters -->
+<section class="mb-8">
+<h2 class="text-2xl font-public-sans font-extrabold text-on-surface tracking-tight mb-6">Activity Log</h2>
+<div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-semibold text-sm shadow-sm active:scale-95 transition-transform">
+                    All
+                </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-medium text-sm hover:bg-emerald-100 transition-colors">
+                    Verified
+                </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-medium text-sm hover:bg-emerald-100 transition-colors">
+                    Flagged
+                </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant font-medium text-sm hover:bg-emerald-100 transition-colors">
+                    Rejected
+                </button>
+</div>
+</section>
+<!-- Proof History Material List -->
+<div class="flex flex-col gap-4">
+<!-- Verified Item -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/10 shadow-sm flex flex-col gap-3 group active:scale-[0.98] transition-all">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="h-12 w-12 rounded-lg bg-emerald-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">eco</span>
+</div>
+<div>
+<p class="font-public-sans font-bold text-on-surface">Tree Plantation Audit</p>
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-wider">REF: GT-8921-22</p>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Verified
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">calendar_today</span>
+<span class="text-xs font-medium text-on-surface-variant">Oct 24, 2023 · 14:32</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">location_on</span>
+<span class="text-xs font-medium text-on-surface-variant truncate">Sector 4, Green Belt</span>
+</div>
+</div>
+</div>
+<!-- Flagged Item -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/10 shadow-sm flex flex-col gap-3 active:scale-[0.98] transition-all">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="h-12 w-12 rounded-lg bg-amber-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-amber-700">factory</span>
+</div>
+<div>
+<p class="font-public-sans font-bold text-on-surface">Emissions Report Q3</p>
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-wider">REF: GT-4412-09</p>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">warning</span>
+                        Flagged
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">calendar_today</span>
+<span class="text-xs font-medium text-on-surface-variant">Oct 21, 2023 · 09:15</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">location_on</span>
+<span class="text-xs font-medium text-on-surface-variant truncate">Ind. Estate A-12</span>
+</div>
+</div>
+<div class="mt-1 p-2.5 bg-amber-50 rounded-lg text-xs text-amber-900 leading-relaxed italic border-l-4 border-amber-400">
+                    Image blur detected. GPS metadata mismatch with submission address.
+                </div>
+</div>
+<!-- Verified Item -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/10 shadow-sm flex flex-col gap-3 active:scale-[0.98] transition-all">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="h-12 w-12 rounded-lg bg-emerald-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">solar_power</span>
+</div>
+<div>
+<p class="font-public-sans font-bold text-on-surface">Solar Grid Integration</p>
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-wider">REF: GT-7721-54</p>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Verified
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">calendar_today</span>
+<span class="text-xs font-medium text-on-surface-variant">Oct 19, 2023 · 11:45</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">location_on</span>
+<span class="text-xs font-medium text-on-surface-variant truncate">City Tech Park</span>
+</div>
+</div>
+</div>
+<!-- Rejected Item -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/10 shadow-sm flex flex-col gap-3 active:scale-[0.98] transition-all">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="h-12 w-12 rounded-lg bg-red-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-error">delete_sweep</span>
+</div>
+<div>
+<p class="font-public-sans font-bold text-on-surface">Waste Disposal Proof</p>
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-wider">REF: GT-3301-88</p>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">cancel</span>
+                        Rejected
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">calendar_today</span>
+<span class="text-xs font-medium text-on-surface-variant">Oct 15, 2023 · 16:20</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">location_on</span>
+<span class="text-xs font-medium text-on-surface-variant truncate">Central Canal Gate</span>
+</div>
+</div>
+</div>
+<!-- Verified Item -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/10 shadow-sm flex flex-col gap-3 active:scale-[0.98] transition-all">
+<div class="flex justify-between items-start">
+<div class="flex gap-3">
+<div class="h-12 w-12 rounded-lg bg-emerald-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">water_drop</span>
+</div>
+<div>
+<p class="font-public-sans font-bold text-on-surface">Water Treatment Logs</p>
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-wider">REF: GT-1129-92</p>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Verified
+                    </div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">calendar_today</span>
+<span class="text-xs font-medium text-on-surface-variant">Oct 12, 2023 · 10:05</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline">location_on</span>
+<span class="text-xs font-medium text-on-surface-variant truncate">Suburban Plant 2</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-xl flex justify-around items-center px-4 pb-4 pt-2 shadow-[0_-4px_24px_0_rgba(25,28,27,0.06)] rounded-t-3xl border-t border-emerald-100/20">
+<button class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 active:scale-90 duration-200">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-inter text-[10px] font-semibold">Dashboard</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-50 rounded-2xl px-5 py-1.5 active:scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-inter text-[10px] font-semibold">Activity</span>
+</button>
+<button class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 active:scale-90 duration-200">
+<span class="material-symbols-outlined">fact_check</span>
+<span class="font-inter text-[10px] font-semibold">Review</span>
+</button>
+<button class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 active:scale-90 duration-200">
+<span class="material-symbols-outlined">person</span>
+<span class="font-inter text-[10px] font-semibold">Profile</span>
+</button>
+</nav>
+<!-- Floating Action Button (FAB) - Contextual for Activity -->
+<button class="fixed bottom-24 right-6 h-14 w-14 rounded-2xl bg-primary-container text-on-primary-container shadow-lg flex items-center justify-center hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-2xl">add_a_photo</span>
+</button>
+</body></html>

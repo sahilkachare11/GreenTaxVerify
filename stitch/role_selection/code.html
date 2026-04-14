@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GreenTax Verify - Role Selection</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-background": "#191c1b",
+                "on-secondary-fixed-variant": "#304e2e",
+                "on-surface-variant": "#40493d",
+                "surface": "#f8faf8",
+                "surface-tint": "#1b6d24",
+                "primary-fixed-dim": "#88d982",
+                "error": "#ba1a1a",
+                "outline": "#707a6c",
+                "tertiary-container": "#b14b6f",
+                "inverse-surface": "#2e3130",
+                "tertiary": "#923357",
+                "secondary-fixed": "#c9ecc1",
+                "inverse-primary": "#88d982",
+                "error-container": "#ffdad6",
+                "primary": "#0d631b",
+                "primary-fixed": "#a3f69c",
+                "surface-bright": "#f8faf8",
+                "surface-container-low": "#f2f4f2",
+                "on-secondary-container": "#4c6a48",
+                "on-tertiary-container": "#ffedf0",
+                "outline-variant": "#bfcaba",
+                "surface-container-lowest": "#ffffff",
+                "secondary-container": "#c6e9be",
+                "surface-dim": "#d8dad9",
+                "on-tertiary-fixed-variant": "#7f2448",
+                "inverse-on-surface": "#eff1ef",
+                "on-error-container": "#93000a",
+                "background": "#f8faf8",
+                "primary-container": "#2e7d32",
+                "on-secondary-fixed": "#052106",
+                "surface-container-high": "#e6e9e7",
+                "secondary": "#476644",
+                "on-primary-fixed-variant": "#005312",
+                "on-primary": "#ffffff",
+                "surface-container-highest": "#e1e3e1",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed": "#002204",
+                "tertiary-fixed": "#ffd9e2",
+                "on-surface": "#191c1b",
+                "on-tertiary-fixed": "#3f001c",
+                "surface-container": "#eceeec",
+                "on-error": "#ffffff",
+                "on-secondary": "#ffffff",
+                "on-primary-container": "#cbffc2",
+                "surface-variant": "#e1e3e1",
+                "secondary-fixed-dim": "#add0a6",
+                "tertiary-fixed-dim": "#ffb1c7"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Public Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-bg-surface-container-low { background-color: #f2f4f2; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-emerald-800 dark:bg-emerald-950 flex justify-between items-center px-4 h-16 w-full shadow-none bg-gradient-to-br from-emerald-900 to-emerald-700">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="account_balance">account_balance</span>
+<span class="font-public-sans font-bold text-lg text-white tracking-tight">GreenTax Verify</span>
+</div>
+<div class="active:scale-95 transition-transform hover:opacity-80 transition-opacity">
+<div class="w-8 h-8 rounded-full bg-emerald-100 overflow-hidden">
+<img alt="User Profile" data-alt="minimalist user avatar placeholder with neutral professional lighting and clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-9Ms4Ycx880HDFLmVdK_E2nF3eLrETyjN1MMg9stQ2t6o1L66G1yywEdDW7Wr6xYiJIRt8ejVc2AunV2KgESUXqVIWG2k-MEwne-78WYZLXEZHBksHH7C4DyiIUtEdA8eoaUmW2J-uQu13ViqQ_S1MOgXxDQU0WyCbGKRj-BymSMww-bK9u0t3DjKsgvgyc2WaQqUOiBhyTtxVjt7riPoxLzfTl2027U6jRml7V9jUoRFdpeteY85zzeqeNmEIez6hhiPgijTuTk"/>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-24 pb-12 px-6 max-w-5xl mx-auto flex flex-col items-center">
+<!-- Header Section -->
+<div class="text-center mb-12">
+<h1 class="text-3xl md:text-4xl font-extrabold text-primary tracking-tight mb-3">Select Your Role</h1>
+<p class="text-on-surface-variant font-medium text-lg max-w-xl mx-auto">
+                Access tailored tools and dashboards based on your official responsibilities or residential status.
+            </p>
+</div>
+<!-- Role Selection Bento-ish Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+<!-- Card 1: Secretary -->
+<button class="group relative flex flex-col items-center text-center p-8 bg-surface-container-lowest rounded-[2rem] transition-all duration-300 hover:bg-surface-container transition-transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary/20">
+<div class="w-20 h-20 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" data-icon="person_filled">person</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Secretary</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Manage administrative verification requests and coordinate with government departments for tax compliance.
+                </p>
+<div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</button>
+<!-- Card 2: BMC Admin (Highlighted/Featured Style) -->
+<button class="group relative flex flex-col items-center text-center p-8 bg-primary-container text-on-primary-container rounded-[2rem] transition-all duration-300 shadow-lg hover:shadow-primary/20 active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary/40">
+<div class="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-white" data-icon="account_balance" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">BMC Admin</h3>
+<p class="text-emerald-50 text-sm leading-relaxed">
+                    Full oversight of environmental tax certificates, policy enforcement, and city-wide sustainability reporting.
+                </p>
+<div class="mt-6 inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 rounded-full text-xs font-semibold">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span>
+                    Official Access
+                </div>
+</button>
+<!-- Card 3: Resident -->
+<button class="group relative flex flex-col items-center text-center p-8 bg-surface-container-lowest rounded-[2rem] transition-all duration-300 hover:bg-surface-container transition-transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary/20">
+<div class="w-20 h-20 rounded-2xl bg-tertiary-container/10 text-tertiary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl" data-icon="home">home</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Resident</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    View your green tax profile, submit verification documents, and track your environmental contribution status.
+                </p>
+<div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</button>
+</div>
+<!-- Trust Badge Section -->
+<div class="mt-16 bg-surface-container-low p-6 rounded-2xl flex flex-col md:flex-row items-center gap-6 max-w-3xl w-full border border-outline-variant/10">
+<div class="flex -space-x-3">
+<img alt="Gov Icon" class="w-10 h-10 rounded-full border-2 border-white" data-alt="stylized government marble building icon with professional clean finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTA4_uD9o6BZoJlNa4HhSHf8tN7Xt_hks48magpBHqTEzyfgpTAy91udMP5u7KeYNZYgZ60fhdx3oOhSLKtvQ5mmlOJexiaJgXXPbRJAqOxTsCrHLSCrDCvoxNYp4GOw5FoE1_fwFZWKGbccw6VbJVTylZabw4Yg62cqMULYwh-IMo2UJ7Lw9BLQH2ZxG3T3bV_CoeJu1GU9tlXwG3ZG21V6Y8oRhJOTFj4jYi1ckPtG-vAhtGwkFCK_XbLtP9_p5MbTFKvwdQIpU"/>
+<img alt="Eco Icon" class="w-10 h-10 rounded-full border-2 border-white" data-alt="vibrant green leaf icon symbolizing environmental sustainability and growth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjU5XFzWqAvZ38uULk42HUZ4sxXPavEKk96GEPAnUbGzHBF57OUuyq1xYB6dpEkMR_pe1bqyj1UexZ7zNKu57cp0FJAMVbQbXFTnFmbZFLbGerGLSH_KlHQILR4zc5_DE_VTdF5VeRgcjA8fotsbOqEjb_GNTrDBONM8wl0DWXotG6bVrjXsjzVl8sdomA1pxQG7Z1tEgL7Qx6XGdCgypPuWE4wEgPmH0PfrisP8yqMD1NFq0uQX-ufj8MbYb7mj_CTC6G-SYVC_I"/>
+<img alt="Trust Icon" class="w-10 h-10 rounded-full border-2 border-white" data-alt="golden scales of justice icon representing legal compliance and fairness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa1G2EPcB3YzvmGp3ojq0LwxqQiy_uOGbC2-3bnyuHGPo6WEYeCLGmSE6_DsBl2qrfgDrBScNzlBGcJtfF3gXktStX_bBXvy9ImZgGb5x-feudlWrm97VGHz06LTwX610jCp9A8MX-XHI9Si3ZT_oQ2WdmASOmjUb5nhxW1frpXrhOZW0nu4U213lfIUZtP0U77Buy55YDM1Pdj2IlwCnyhISlcl2Cl9kUNXSYS69yitH9VGTftc8Q6RpkAe__YCn3BlEEf1pF2sM"/>
+</div>
+<div class="flex-1 text-center md:text-left">
+<p class="text-sm text-on-surface-variant font-medium">
+<span class="text-primary font-bold">Government Backed Security.</span> Your data is protected by BMC's high-level encryption standards and environmental verification protocols.
+                </p>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2 rounded-xl flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="text-[10px] font-bold text-primary uppercase tracking-wider">Verified System</span>
+</div>
+</div>
+</main>
+<!-- Suppressed Navigation Shell as per "Task-Focused" rule for onboarding/role selection -->
+<!-- But if required by "Must render if destination" - Screen 2 is a gatekeeper. We keep it focused. -->
+<!-- Optional Footer Decoration (Asymmetric Gradient) -->
+<div class="fixed bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-tertiary opacity-20"></div>
+</body></html>

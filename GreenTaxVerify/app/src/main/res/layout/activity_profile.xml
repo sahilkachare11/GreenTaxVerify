@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:title="GreenTax Verify"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Profile Avatar -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_avatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="8dp"
+                android:src="@android:drawable/sym_contact_card"
+                app:civ_border_color="@color/primary"
+                app:civ_border_width="3dp" />
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Admin User"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <!-- Role -->
+            <TextView
+                android:id="@+id/tv_user_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="BMC Administrator"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+            <!-- Society -->
+            <TextView
+                android:id="@+id/tv_society_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Green Valley Housing Society"
+                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                android:gravity="center" />
+
+            <!-- Edit Profile Button -->
+            <Button
+                android:id="@+id/btn_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Edit Profile"
+                android:backgroundTint="@color/primary"
+                style="@style/Widget.Material3.Button" />
+
+            <!-- Account Overview Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="8dp"
+                android:text="ACCOUNT OVERVIEW"
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+                android:letterSpacing="0.12" />
+
+            <!-- Settings Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Settings Row -->
+                    <Button
+                        android:id="@+id/btn_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="16dp"
+                        android:text="⚙  Settings"
+                        android:textAlignment="textStart"
+                        style="@style/Widget.Material3.Button.TextButton" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/surface" />
+
+                    <!-- Tax Certificates Row -->
+                    <Button
+                        android:id="@+id/btn_tax_certificates"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="16dp"
+                        android:text="📄  Tax Certificates"
+                        android:textAlignment="textStart"
+                        style="@style/Widget.Material3.Button.TextButton" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/surface" />
+
+                    <!-- Help & Support Row -->
+                    <Button
+                        android:id="@+id/btn_help_support"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="16dp"
+                        android:text="❓  Help &amp; Support"
+                        android:textAlignment="textStart"
+                        style="@style/Widget.Material3.Button.TextButton" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Logout Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#1Fba1a1a"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp">
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    android:text="↩  Logout"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/error"
+                    style="@style/Widget.Material3.Button.TextButton" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_resident_nav" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

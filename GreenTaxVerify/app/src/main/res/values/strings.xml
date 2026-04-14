@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">GreenTaxVerify</string>
+
+    <string name="splash_tagline">Verify and manage your green tax in seconds</string>
+
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to continue to your tax dashboard.</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="error_email_required">Email is required</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="login_success">Login successful</string>
+
+    <string name="nav_verify">Verify</string>
+    <string name="nav_tax_status">Tax Status</string>
+    <string name="nav_payment">Payment</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="title_verify">Vehicle Verification</string>
+    <string name="desc_verify">Enter your registration details to verify tax eligibility.</string>
+    <string name="title_tax_status">Tax Status</string>
+    <string name="desc_tax_status">Track due dates and current payment status in one place.</string>
+    <string name="title_payment">Payments</string>
+    <string name="desc_payment">Choose a payment method and complete secure transactions.</string>
+    <string name="title_profile">Profile</string>
+    <string name="desc_profile">View your account details and update preferences.</string>
+    <string name="error_vehicle_required">Vehicle number is required</string>
+    <string name="tax_paid">Green Tax: PAID</string>
+    <string name="tax_pending">Green Tax: PENDING</string>
+    <string name="vehicle_na">N/A</string>
+    <string name="result_text_format">Vehicle Number: %1$s\n%2$s</string>
+</resources>

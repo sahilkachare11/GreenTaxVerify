@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Society Compliance - GreenTax Verify</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#191c1b",
+                        "on-secondary-fixed-variant": "#304e2e",
+                        "on-surface-variant": "#40493d",
+                        "surface": "#f8faf8",
+                        "surface-tint": "#1b6d24",
+                        "primary-fixed-dim": "#88d982",
+                        "error": "#ba1a1a",
+                        "outline": "#707a6c",
+                        "tertiary-container": "#b14b6f",
+                        "inverse-surface": "#2e3130",
+                        "tertiary": "#923357",
+                        "secondary-fixed": "#c9ecc1",
+                        "inverse-primary": "#88d982",
+                        "error-container": "#ffdad6",
+                        "primary": "#0d631b",
+                        "primary-fixed": "#a3f69c",
+                        "surface-bright": "#f8faf8",
+                        "surface-container-low": "#f2f4f2",
+                        "on-secondary-container": "#4c6a48",
+                        "on-tertiary-container": "#ffedf0",
+                        "outline-variant": "#bfcaba",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#c6e9be",
+                        "surface-dim": "#d8dad9",
+                        "on-tertiary-fixed-variant": "#7f2448",
+                        "inverse-on-surface": "#eff1ef",
+                        "on-error-container": "#93000a",
+                        "background": "#f8faf8",
+                        "primary-container": "#2e7d32",
+                        "on-secondary-fixed": "#052106",
+                        "surface-container-high": "#e6e9e7",
+                        "secondary": "#476644",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e1e3e1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#002204",
+                        "tertiary-fixed": "#ffd9e2",
+                        "on-surface": "#191c1b",
+                        "on-tertiary-fixed": "#3f001c",
+                        "surface-container": "#eceeec",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#cbffc2",
+                        "surface-variant": "#e1e3e1",
+                        "secondary-fixed-dim": "#add0a6",
+                        "tertiary-fixed-dim": "#ffb1c7"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Public Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-gradient-to-br from-emerald-900 to-emerald-700 flex justify-between items-center px-4 h-16 w-full shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="account_balance">account_balance</span>
+<h1 class="font-headline font-bold text-lg tracking-tight text-white">GreenTax Verify</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-200/30">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional man in a clean studio setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVxnZfHQw2GupDZxBnNxBCgXo6rXix_yUNV0Wo7biPJVDGWndCqjUn0GalOw0_hl8STdBeis6UIgyQUXCXWK7ccWDxO3CFv-_SeDHJlbbIkN4Kx4WqbYroM4JWadAOCpk5BUyUVltVVLAMDTGLnljGPhihIlHNygeGrytgelUAiSVzFxQXPz06X1zbdaHV4M1xcC3QYJJyNn7yu7OixgpGjxn9Y7N2oCYRKb2jJHQXJwbPxdDAUJLleoI4wHTsUzqAUDlTEONS7xE"/>
+</div>
+</header>
+<main class="pt-20 px-4 md:px-8 max-w-5xl mx-auto space-y-6">
+<!-- Society Header Section -->
+<section class="mt-4">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="text-primary font-bold tracking-widest text-[10px] uppercase mb-1">CURRENT LOCATION</p>
+<h2 class="text-2xl font-extrabold text-on-surface leading-tight">Emerald Heights Residency</h2>
+<p class="text-on-surface-variant flex items-center gap-1.5 mt-1 font-medium text-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span>
+                        Plot 42, Green Valley Sector, Metropolitan City
+                    </p>
+</div>
+<div class="bg-primary-fixed text-on-primary-fixed-variant px-4 py-2 rounded-full flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs font-bold font-headline">GOVERNMENT VERIFIED</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid for Stats -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Compliance Big Card -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-on-surface-variant font-semibold text-sm">Society Compliance</h3>
+<div class="mt-6 flex items-baseline gap-2">
+<span class="text-7xl font-black text-primary tracking-tighter">84</span>
+<span class="text-3xl font-bold text-primary-container tracking-tighter">%</span>
+</div>
+<p class="mt-4 text-on-surface-variant text-sm max-w-[240px]">
+                        Your society is currently exceeding the regional average for environmental compliance by <span class="text-primary font-bold">12%</span>.
+                    </p>
+</div>
+<!-- Abstract visual element -->
+<div class="absolute -right-12 -bottom-12 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl group-hover:bg-primary-fixed/30 transition-colors duration-500"></div>
+<div class="absolute right-8 top-8">
+<span class="material-symbols-outlined text-primary/10 text-[120px]" data-icon="eco">eco</span>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10">
+<div class="flex items-center justify-between text-xs font-bold text-on-surface-variant">
+<span>Status: Highly Compliant</span>
+<span class="text-primary">Next Review: 15 Oct</span>
+</div>
+<div class="w-full h-2 bg-surface-container mt-2 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[84%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Monthly Savings Card -->
+<div class="md:col-span-5 bg-gradient-to-br from-emerald-800 to-emerald-950 rounded-3xl p-8 text-white flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="text-[10px] font-bold tracking-widest bg-white/10 px-2 py-1 rounded">ESTIMATED SAVINGS</span>
+</div>
+<h3 class="mt-6 text-emerald-100/80 font-medium text-sm">Monthly Tax Deduction</h3>
+<div class="mt-2 text-4xl font-bold">₹2,450</div>
+</div>
+<div class="mt-8">
+<p class="text-emerald-50/70 text-xs leading-relaxed">
+                        Based on the current 84% compliance score, each resident unit is eligible for a 15% Green Tax rebate.
+                    </p>
+<button class="mt-4 w-full bg-white text-emerald-900 py-3 rounded-xl font-bold text-sm hover:opacity-90 transition-opacity active:scale-[0.98]">
+                        View Breakdown
+                    </button>
+</div>
+</div>
+</div>
+<!-- Details Sections -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Compliance Pillars -->
+<div class="bg-surface-container-low rounded-3xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline font-bold text-on-surface">Compliance Pillars</h3>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="info">info</span>
+</div>
+<div class="space-y-4">
+<!-- Solar Energy -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600">
+<span class="material-symbols-outlined" data-icon="solar_power">solar_power</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Solar Grid Usage</p>
+<p class="text-[11px] text-on-surface-variant">45% total capacity</p>
+</div>
+</div>
+<span class="text-sm font-bold text-primary">100%</span>
+</div>
+<!-- Waste Mgmt -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600">
+<span class="material-symbols-outlined" data-icon="recycling">recycling</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Waste Segregation</p>
+<p class="text-[11px] text-on-surface-variant">Verified by BMC</p>
+</div>
+</div>
+<span class="text-sm font-bold text-primary">92%</span>
+</div>
+<!-- Water Harvesting -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Water Harvesting</p>
+<p class="text-[11px] text-on-surface-variant">Maintenance Pending</p>
+</div>
+</div>
+<span class="text-sm font-bold text-tertiary">60%</span>
+</div>
+</div>
+</div>
+<!-- Recent Proof Uploads (Read Only) -->
+<div class="bg-surface-container-low rounded-3xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline font-bold text-on-surface">Compliance Records</h3>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Read Only</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-4 p-3 hover:bg-surface-container transition-colors rounded-xl cursor-default">
+<div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Solar" class="w-full h-full object-cover" data-alt="solar panels installed on a residential roof reflecting the clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhQwwY92jcoMzKa7wSLoVNOI_NGSUuNeVY1IafNgcfEQ90T6HjROVFZJct9EI_PgZvy_Xc5RPpluCcQRGxPbYFdhgOYdO9x2U35uRbSpoaMuSMrwucITu2yLro70cniuZYg5LstO5ZDaZJyEoQOhN2ujyGQNTylXvoVtXf6jO3sUPZiXVHloMAfO_dEhuthHuw82myqPF85geaoaRYwhkhu7b1XEsbT1JQRKP7Mu7y1hmPZGQIEqrGsFLTZ7cS1Xh-c10jCIQok0c"/>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-semibold text-on-surface">Solar Maintenance Receipt</p>
+<p class="text-[11px] text-on-surface-variant">Uploaded Sep 12, 2023</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]" data-icon="visibility">visibility</span>
+</div>
+<div class="flex items-center gap-4 p-3 hover:bg-surface-container transition-colors rounded-xl cursor-default">
+<div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Waste" class="w-full h-full object-cover" data-alt="close up of neatly organized recycling bins with clear green symbols" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqwOJcGgvPuA2gvtEBTvbMR33imdH_g9YjJxuu3IVkOzxQANqFlJKzfL8QLgG1qtR8NI_66YkTvo-_KfxMsZhEiGDDQwemiOXaoK7If7ugtGkvVQWfitUTELoA47OZSBxTZqG4R-nyt2pXfr4RwoVKRAsXGntYzmcDwV5c8d1UaDg603LUGP724huBE-hHQ7mm6uoinG4SFMLANaDJmoLeAFi9zi7goWZcK31vC7FTXyxXKRHRluYKPWMTlqB8BJkLAX7dK3Ff_BI"/>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-semibold text-on-surface">Waste Audit Report Q3</p>
+<p class="text-[11px] text-on-surface-variant">Uploaded Sep 05, 2023</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]" data-icon="visibility">visibility</span>
+</div>
+<div class="flex items-center gap-4 p-3 hover:bg-surface-container transition-colors rounded-xl cursor-default opacity-60">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant flex-shrink-0">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+</div>
+<div class="flex-grow">
+<p class="text-sm font-semibold text-on-surface">Water Bill - Green Credit</p>
+<p class="text-[11px] text-on-surface-variant">Uploaded Aug 28, 2023</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]" data-icon="visibility">visibility</span>
+</div>
+</div>
+<button class="w-full mt-4 text-primary text-xs font-bold py-2 border border-primary/20 rounded-lg hover:bg-primary/5 transition-colors">
+                    Download Full History
+                </button>
+</div>
+</div>
+<!-- Info Notice -->
+<div class="bg-surface-container-highest p-4 rounded-2xl flex gap-3 items-start">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="verified_user">verified_user</span>
+<div>
+<h4 class="text-sm font-bold text-on-surface">Data Integrity Assured</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed mt-1">
+                    Compliance data is synchronized directly from Municipal Corporation of Greater Metropolitan Area (MCGMA) servers and society management records. Individual residents cannot modify these records directly.
+                </p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-xl shadow-[0_-4px_24px_0_rgba(25,28,27,0.06)] border-t border-emerald-100/20">
+<a class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span class="font-inter text-[10px] font-semibold">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="history">history</span>
+<span class="font-inter text-[10px] font-semibold">Activity</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-900 dark:text-emerald-50 rounded-2xl px-5 py-1.5 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="fact_check">fact_check</span>
+<span class="font-inter text-[10px] font-semibold">Review</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 opacity-70 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-inter text-[10px] font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>
